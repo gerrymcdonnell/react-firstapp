@@ -14,7 +14,14 @@ import React from 'react';
  * sing curly brackets denote javascript
  */
 const person = (props) => {
-  return <p>im {props.name}, and im {props.age} old</p>
+  
+  //outping props and childen
+  return (
+  <div>
+    <p>im {props.name}, and im {props.age} old</p>
+    <p>children {props.children} </p>
+  </div>
+  )
 };
 
 export default person;
