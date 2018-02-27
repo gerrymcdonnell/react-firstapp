@@ -10,8 +10,11 @@ a component is a function returning jsx
 import React from 'react';
 
 //ES6 best practise for react
-const person=()=>{
-  return <p>im a person </p>
+/**
+ * sing curly brackets denote javascript
+ */
+const person = (props) => {
+  return <p>im {props.name}, and im {props.age} old</p>
 };
 
 export default person;

@@ -14,7 +14,11 @@ class App extends Component {
       **/
       <div className="App">
         <h1> first app </h1>
-        <Person/>
+
+        <Person name="ted" age="22"/>
+        <Person name="bob" age="333"/>
+        <Person name="pete" age="44">My Hobbies: Racing </Person>
+
       </div>
 
 
