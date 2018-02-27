@@ -15,6 +15,10 @@ class App extends Component {
     ]  
   }
 
+  switchNameHandler=()=>{
+    console.log('was cled');
+  }
+
   render() {
 
     return (
@@ -25,7 +29,7 @@ class App extends Component {
       <div className="App">
         <h1> first app </h1>
 
-        <button>btn</button>
+        <button onClick={this.switchNameHandler}>Click me</button>
 
         <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
 
