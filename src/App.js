@@ -15,9 +15,21 @@ class App extends Component {
     ]  
   }
 
+
   switchNameHandler=()=>{
-    console.log('was cled');
+    //dont do this
+    //this.state.persons[0].name='qwerty';
+
+    //must use the fucntion
+    this.setState({
+      persons:[
+        { name:'maxE',age:99 },
+        { name:'ted',age:99 },
+        { name:'bob',age:99 }
+      ]  
+    })
   }
+  //emded here vid 41
 
   render() {
 
