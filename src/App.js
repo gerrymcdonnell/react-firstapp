@@ -5,6 +5,16 @@ import Person from './Person/Person';
 
 
 class App extends Component {
+  
+  //state is a special property
+  state={
+    persons:[
+      { name:'maxE',age:34 },
+      { name:'ted',age:54 },
+      { name:'bob',age:24 }
+    ]  
+  }
+
   render() {
 
     return (
@@ -15,9 +25,11 @@ class App extends Component {
       <div className="App">
         <h1> first app </h1>
 
-        <Person name="ted" age="22"/>
-        <Person name="bob" age="333"/>
-        <Person name="pete" age="44">My Hobbies: Racing </Person>
+        <button>btn</button>
+
+        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
+
+        <Person name="test23" age="44">My Hobbies: Racing </Person>
 
       </div>
 
